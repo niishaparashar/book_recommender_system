@@ -64,21 +64,23 @@ book_recommender_system/
 ```bash
 git clone https://github.com/niishaparashar/book_recommender_system.git
 cd book_recommender_system
-## Setup Instructions
-
-### 2. Create a virtual environment (optional but recommended)
-```bash
+2. Create a virtual environment (optional but recommended)
+bash
+Copy code
 python -m venv venv
-venv\Scripts\activate   # On Windows
-### 3. Install dependencies
-
+venv\Scripts\activate   # Windows
+3. Install dependencies
+bash
+Copy code
 pip install -r requirements.txt
-### 4. Run the application
-    python app.py
-### 5. Open in browser
-
+4. Run the application
+bash
+Copy code
+python app.py
+5. Open in browser
+cpp
+Copy code
 http://127.0.0.1:5000
-
 ```
 #Notes:
 
@@ -94,5 +96,5 @@ The application is deployed and accessible here:
 🔗 https://booknet-9eos.onrender.com/
 
 
-## Project Structure
+
 
