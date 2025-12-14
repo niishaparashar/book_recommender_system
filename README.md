@@ -39,11 +39,11 @@ book_recommender_system/
 ├── similarity_scores.pkl
 │
 ├── templates/
-│   ├── index.html
-│   └── recommend.html
+│ ├── index.html
+│ └── recommend.html
 │
 └── static/
-    ├──style.css
+    └── style.css
     ---
 
 ## How It Works
