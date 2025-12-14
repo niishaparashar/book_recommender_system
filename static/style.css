@@ -1,0 +1,193 @@
+/* Custom Cyberpunk, Dark, and Minimalistic Styling */
+
+/* Load a techy, minimal font (Montserrat) and a futuristic display font (Rajdhani) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Rajdhani:wght@600;700&display=swap');
+
+/* --- Base Body & Background --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0d0d0d; /* Very dark background */
+    color: #e0e0e0; /* Light gray text for readability */
+    line-height: 1.6;
+}
+
+/* --- Utility for Neon Glow (Cyan retained for secondary accent) --- */
+.neon-text {
+    color: #00FFFF; /* Electric Cyan/Blue */
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+/* New Silver/Gray border class */
+.neon-border {
+    border: 1px solid #CCCCCC; /* Changed from Magenta to Silver */
+    box-shadow: 0 0 8px rgba(204, 204, 204, 0.4); /* Silver glow */
+}
+
+/* Descriptive text on the Index page (Popular Books) */
+.descriptive-text {
+    color: #CCCCCC !important; /* Silver */
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: -15px;
+}
+
+/* NEW: Descriptive text inside the Recommendation Header */
+.header-descriptive-text {
+    color: #00FFFF !important; /* Bright Cyan for high visibility */
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* --- Navigation & Header --- */
+.navbar-custom {
+    background-color: #1a1a1a !important;
+    border-bottom: 2px solid #00FFFF;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #CCCCCC !important; /* Silver */
+}
+
+.nav-link {
+    font-weight: 400;
+    transition: color 0.3s ease;
+    color: #e0e0e0 !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #00FFFF !important; /* Electric Cyan */
+    border-bottom: 1px solid #00FFFF;
+}
+
+/* --- Headings --- */
+.main-heading {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FFF;
+}
+
+.sub-heading {
+    color: #CCCCCC; /* Silver subheading */
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    background-color: #CCCCCC; /* Silver button */
+    border-color: #CCCCCC;
+    color: #1a1a1a;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #00FFFF; /* Cyan on hover */
+    border-color: #00FFFF;
+    color: #1a1a1a;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+/* --- Book Card Styling --- */
+.book-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    border: 1px solid #CCCCCC; /* Silver hover border */
+    box-shadow: 0 0 10px rgba(204, 204, 204, 0.4); /* Silver glow */
+    transform: none;
+}
+
+.book-card img {
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.85;
+    border-bottom: 1px solid #333;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: #1a1a1a;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00FFFF; /* Cyan title */
+}
+
+.author {
+    font-weight: 300;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+/* --- Badges & Utility --- */
+.badge {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.8rem;
+    padding: 6px 8px;
+    margin-top: 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.bg-warning {
+    background-color: #00FFFF !important; /* Cyan rating badge */
+    color: #1a1a1a !important;
+    font-weight: 700;
+}
+
+.bg-info {
+    background-color: #CCCCCC !important; /* Silver votes badge */
+    color: #1a1a1a !important;
+    font-weight: 700;
+}
+
+.recommendation-header {
+    background-color: #1a1a1a;
+    border: 2px solid #CCCCCC; /* Silver border */
+    border-radius: 5px;
+    padding: 3rem !important;
+    box-shadow: 0 0 15px rgba(204, 204, 204, 0.3); /* Silver glow */
+}
+
+/* Input field style */
+.form-control {
+    background-color: #0d0d0d;
+    color: #00FFFF;
+    border: 1px solid #333;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    background-color: #0d0d0d;
+    color: #00FFFF;
+    border-color: #00FFFF;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .recommendation-header .w-75 {
+        width: 100% !important;
+    }
+    .book-card img {
+        height: 150px;
+    }
+}
