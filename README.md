@@ -29,21 +29,24 @@ The recommendations are generated using **collaborative filtering**, with simila
 
 ---
 
-book_recommender_system/
-│
-├── app.py
-├── requirements.txt
-├── popular.pkl
-├── pt.pkl
-├── books.pkl
-├── similarity_scores.pkl
-│
-├── templates/
-│ ├── index.html
-│ └── recommend.html
-│
-└── static/
-    └── style.css
+## Project Structure
+
+    book_recommender_system/
+    │
+    ├── app.py
+    ├── requirements.txt
+    ├── popular.pkl
+    ├── pt.pkl
+    ├── books.pkl
+    ├── similarity_scores.pkl
+    │
+    ├── templates/
+    │   ├── index.html
+    │   └── recommend.html
+    │
+    └── static/
+        └── style.css
+
     ---
 
 ## How It Works
